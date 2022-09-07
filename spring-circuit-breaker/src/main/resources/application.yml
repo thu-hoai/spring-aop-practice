@@ -1,0 +1,7 @@
+server:
+  port: 8080
+
+typi-code-client:
+  base-url: https://jsonplaceholder.typicode.com
+  get-album-path: /albums
+

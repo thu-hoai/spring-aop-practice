@@ -1,2 +1,4 @@
-# spring-aop-practice
-Self-improving Spring skill
+# spring-practice
+Self-improving Spring skill:
+- AOP
+- Circuit breaker 

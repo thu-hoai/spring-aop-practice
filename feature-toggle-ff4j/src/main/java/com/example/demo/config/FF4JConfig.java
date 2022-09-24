@@ -17,7 +17,6 @@ public class FF4JConfig {
   public FF4j configFF4J(DataSource dataSource) {
     FF4j ff4j = new FF4j();
     ff4j.setAuthorizationsManager(new SpringSecurityAuthorisationManager());
-
     FeatureStore featureStore = new FeatureStoreSpringJdbc(dataSource);
     ff4j.setFeatureStore(featureStore);
     ff4j.setPropertiesStore(new PropertyStoreSpringJdbc(dataSource));

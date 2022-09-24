@@ -1,2 +1,22 @@
 server:
   port: 8080
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/data_test
+    username: postgres
+    password: postgres
+
+  jpa:
+    properties:
+      hibernate:
+        default_schema: public
+  flyway:
+    schemas: public
+    locations: classpath:db/migration
+    enabled: true
+
+ff4j:
+  api:
+    context-path: /ff4j
+    spring-doc:
+      enabled: true

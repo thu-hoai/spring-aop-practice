@@ -1,11 +1,15 @@
 server:
   port: 8080
+
+typi-code-client:
+  base-url: https://jsonplaceholder.typicode.com
+  get-album-path: /albums
+
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5433/data_test
     username: postgres
     password: postgres
-
   jpa:
     properties:
       hibernate:
@@ -17,6 +21,12 @@ spring:
 
 ff4j:
   api:
-    context-path: /ff4j
+    context-path: v1/ff4j
     spring-doc:
       enabled: true
+
+logging:
+  level:
+    org:
+      springframework: DEBUG
+#        security: DEBUG

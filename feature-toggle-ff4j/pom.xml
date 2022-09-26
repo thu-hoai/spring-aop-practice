@@ -17,6 +17,7 @@
 		<java.version>11</java.version>
 		<ff4j.version>1.8.13</ff4j.version>
 		<postgressql.version>42.5.0</postgressql.version>
+		<h2.version>2.1.214</h2.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -80,6 +81,12 @@
 			<groupId>org.thymeleaf</groupId>
 			<artifactId>thymeleaf</artifactId>
 			<version>3.0.14.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>${h2.version}</version>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 </project>

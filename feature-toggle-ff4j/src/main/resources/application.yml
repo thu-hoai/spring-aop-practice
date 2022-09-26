@@ -14,11 +14,11 @@ spring:
     properties:
       hibernate:
         default_schema: public
+    show_sql: true
   flyway:
     schemas: public
     locations: classpath:db/migration
     enabled: true
-
 ff4j:
   api:
     context-path: v1/ff4j

@@ -7,6 +7,7 @@ import org.ff4j.security.SpringSecurityAuthorisationManager;
 import org.ff4j.springjdbc.store.EventRepositorySpringJdbc;
 import org.ff4j.springjdbc.store.FeatureStoreSpringJdbc;
 import org.ff4j.springjdbc.store.PropertyStoreSpringJdbc;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -14,7 +15,7 @@ import org.springframework.context.annotation.Configuration;
 public class FF4JConfig {
 
   @Bean
-  public FF4j configFF4J(DataSource dataSource) {
+  public FF4j configFF4J(@Autowired DataSource dataSource) {
     FF4j ff4j = new FF4j();
     ff4j.setAuthorizationsManager(new SpringSecurityAuthorisationManager());
     FeatureStore featureStore = new FeatureStoreSpringJdbc(dataSource);

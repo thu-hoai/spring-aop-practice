@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:db;IGNORECASE=TRUE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: sa
+  flyway:
+    schemas: PUBLIC
+    locations: classpath:test-data/V1__init.sql
+    enabled: false
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show_sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+typi-code-client:
+  base-url:
+  get-album-path:
+

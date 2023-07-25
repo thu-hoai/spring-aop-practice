@@ -19,9 +19,12 @@ spring:
     schemas: public
     locations: classpath:db/migration
     enabled: true
+  output:
+    ansi:
+      enabled: ALWAYS
 ff4j:
   api:
-    context-path: v1/ff4j
+    context-path: /v1/ff4j
     spring-doc:
       enabled: true
 
@@ -29,4 +32,7 @@ logging:
   level:
     org:
       springframework: DEBUG
+    com:
+      example:
+        demo: DEBUG
 #        security: DEBUG

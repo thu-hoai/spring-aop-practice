@@ -27,6 +27,7 @@ public class AlbumService {
   }
 
   public List<Album> getAlbumList() {
+    LOGGER.debug("Check if the feature {} is turning on or off", GET_ALBUMS_LIST);
     if (featureToggleService.isFeatureEnabled(GET_ALBUMS_LIST)) {
       LOGGER.info("Getting albums list from TYPI");
       return typiAlbumService.getAlbumsList();

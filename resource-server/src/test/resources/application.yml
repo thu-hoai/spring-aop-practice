@@ -1,0 +1,5 @@
+
+typi-code-client:
+  base-url: http://localhost:9000
+  get-album-path: /albums
+

@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+
+#add spring datasource config
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/CASHA
+    username: postgres
+    password: 123456
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        default_schema: public
+    show_sql: true
+  flyway:
+    table: schema_version
+    enabled: true
+    group: true
+    check-location: false
+
+  output:
+    ansi:
+      enabled: ALWAYS

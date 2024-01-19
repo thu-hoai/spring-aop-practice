@@ -1,0 +1,2 @@
+INSERT INTO public.T_MK_USER(MKU_ARGOS_ID, MKU_USERNAME, MKU_FIRST_NAME, MKU_LAST_NAME, MKU_EMAIL, MKU_PASSWORD_HASH, MKU_IS_ENABLED, MKU_PWD_RESET_DATE, CREATED_BY, VERSION, MKU_AUTH_PROVIDER, mku_avatar, mku_date_of_birth)
+	VALUES('0000099246', 'hoai', 'Supper', 'Admin', 'hoaikt1994@gmail.com', '$2a$12$FYsxwNvUA23lCtQiJixseOZT0OoinHjuPo/1hYmRb2y/SvYGLv6gi', true, '2010-01-01', 'bycnit', 0, 'LOCAL', '', '2010-01-01');

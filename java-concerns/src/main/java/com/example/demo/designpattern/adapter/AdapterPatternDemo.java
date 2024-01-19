@@ -57,7 +57,7 @@ class AudioPlayer implements MediaPlayer {
 // Demo class to test the adapter pattern
 public class AdapterPatternDemo {
     public static void main(String[] args) {
-        AudioPlayer audioPlayer = new AudioPlayer();
+        MediaPlayer audioPlayer = new AudioPlayer();
 
         audioPlayer.play("mp3", "file1.mp3");
         audioPlayer.play("vlc", "file2.vlc");
